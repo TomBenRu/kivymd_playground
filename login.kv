@@ -1,7 +1,7 @@
 Screen:
     MDCard:
         size_hint: None, None
-        size: 300, 500
+        size: 800, 1200
         pos_hint: {'center_x':.5, 'center_y':.5}
         elevation: 10
         padding: 20, 20, 20, 20
@@ -22,7 +22,7 @@ Screen:
             hint_text: "Username"
             icon_right: "account"
             size_hint_x: None
-            width: 200
+            width: 600
             font_size: "15sp"
             pos_hint: {'center_x':.5}
 
@@ -31,7 +31,7 @@ Screen:
             hint_text: "Password"
             icon_right: "lock"
             size_hint_x: None
-            width: 200
+            width: 600
             font_size: "15sp"
             pos_hint: {'center_x':.5}
             password: True
@@ -39,12 +39,16 @@ Screen:
         MDRoundFlatButton:
             text: "Login"
             font_size: "15sp"
+            size_hint_x: None
+            width: 400
             pos_hint: {'center_x':.5}
             on_press: app.login()
 
         MDRoundFlatButton:
             text: "Clear"
             font_size: "15sp"
+            size_hint_x: None
+            width: 400
             pos_hint: {'center_x':.5}
             on_press: app.clear()
 
