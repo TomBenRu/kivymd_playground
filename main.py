@@ -1,7 +1,6 @@
-from kivy.lang import Builder
 from kivymd.app import MDApp
-from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.uix.card import MDCard
+from kivymd.uix.button import MDRoundFlatButton
 
 
 class LoginScreen(MDCard):
