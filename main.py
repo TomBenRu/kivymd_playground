@@ -7,12 +7,12 @@ from kivymd.uix.card import MDCard
 class LoginScreen(MDCard):
 
     def login(self):
-        self.root.ids.welcome_label.text = f"Welcome {self.root.ids.user.text}"
+        self.ids.welcome_label.text = f"Welcome {self.ids.user.text}"
 
     def clear(self):
-        self.root.ids.welcome_label.text = "Welcome"
-        self.root.ids.user.text = ""
-        self.root.ids.password.text = ""
+        self.ids.welcome_label.text = "Welcome"
+        self.ids.user.text = ""
+        self.ids.password.text = ""
 
 
 
