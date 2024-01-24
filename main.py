@@ -1,6 +1,5 @@
 from kivymd.app import MDApp
 from kivymd.uix.card import MDCard
-from kivymd.uix.button import MDRoundFlatButton
 
 
 class LoginScreen(MDCard):
@@ -14,13 +13,11 @@ class LoginScreen(MDCard):
         self.ids.password.text = ""
 
 
-
 class MainApp(MDApp):
     def build(self):
         self.theme_cls.theme_style = "Dark"
         self.theme_cls.primary_palette = "BlueGray"
         return LoginScreen()
-
 
 
 MainApp().run()
